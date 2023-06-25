@@ -1,5 +1,5 @@
 ﻿/*
-Covid 19 Data Exploration 
+Covid 19 Data Exploration using BigQuery
 Skills used: Joins, CTE's, Temporary Tables, Windows Functions, Aggregate Functions, Creating Views, Converting Data Types
 */
 
