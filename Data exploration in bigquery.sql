@@ -39,6 +39,7 @@ order by 1,2
 
 Select Location, Population, MAX(total_cases) as Total_cases,  Max((total_cases/population))*100 as percent_population_infected
 From `endless-orb-381518.portfolio_project.covid_deaths`
+Where Continent is not null
 Group by Location, Population
 order by percent_population_infected desc
 
@@ -47,6 +48,7 @@ order by percent_population_infected desc
 
 Select Location, Population, MAX(total_deaths) as Total_deaths,  Max((total_deaths/population))*100 as percent_population_dead
 From `endless-orb-381518.portfolio_project.covid_deaths`
+Where Continent is not null
 Group by Location, Population
 order by percent_population_dead desc
 
